@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Now Display DW",sans-serif
+}
+
+.modal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background: #0f141e;
+    z-index: 999;
+}
+
+body {
+    background: #FFFF
+}
+
+/*Header*/
+.logo {
+    padding: 6px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    height: 8vh;
+}
+
+.by {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nome {
+    margin-top: 2vh;
+    margin-left: -9px;
+    z-index: 999;
+}
+
+.mywork {
+    font-size: 0.7rem;
+    opacity: 0.9;
+    margin-left: -9px;
+    letter-spacing: .2rem;
+    color: black;
+    z-index: 999;
+}
+
+/*Menu*/
+.logomenu {
+    padding: 15px;
+    cursor: pointer;
+    height: 8vh;
+}
+
+.logomenu img {
+    height: 8vh;
+}
+
+.bymenu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nomemenu {
+    margin-top: 36px;
+    margin-left: -13px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.myworkmenu {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-left: -13px;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: .2rem;
+}
+
+.menuopen {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menuopen p {
+    font-size: 0.9rem;
+    position: relative;
+    top: -5px;
+    right: 5px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.menuopen:hover {
+    color: #FFF;
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 28vh;
+    left: 43%;
+    color: #878a8f;
+}
+
+.options p {
+    font-size: 3.7rem;
+}
+
+.op p:hover {
+    color :#FFF;
+    cursor: pointer;
+    transition: 0.3s;
+} 
+
+.tit {
+    font-size: 0.95rem;
+    position: absolute;
+    top: 25vh;
+    left: 48%;
+    color: #878a8f;
+    letter-spacing: .3rem;
+}
+
+.fot {
+    position: absolute;
+    top: 94%;
+    left: 41%;
+    color: #878a8f;
+}
+
+.fot p {
+    font-size: 0.9rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: end;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menu p:before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4228d6;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s
+}
+
+.menu p {
+    font-size: 0.9rem;
+    position: relative;
+    top: -5px;
+    right: 5px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.menu:hover p:before {
+    width: 170%;
+}
+
+.txt p {
+    cursor: pointer;
+}
+/* 
+.txt p:before {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #000000;
+    position: absolute;
+    top: 179.2%;
+    left: 33vw;
+    transition: .1s;
+}
+
+.txt:hover p:before {
+    width: 32.5%;
+} */
+
+.need p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-left: -13px;
+    margin-top: 15vh;
+}
+
+.txt {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.txt img {
+    position: relative;
+    top: 3px;
+}
+
+.txt p {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.lwt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+.line {
+    height: 1px;
+    background-color: gray;
+    width: 75%;
+    margin: auto;
+    opacity: 0.3;
+    margin-top: 8vh;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7vh;
+}
+
+.contact p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 350px;
+}
+
+.current p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 150px;
+}
+
+.flw p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 120px;
+}
+
+.texto p {
+    margin-top: 1vh;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.texto2 p {
+    margin-top: 1vh;
+    font-size: 1rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.copy p {
+    margin-top: 12vh;
+    font-size: 0.9rem;
+    color: #878a8f;
+}
+
+.textocontact p {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.textocontact {
+    height: 7vh;
+}
+
+.e, .p {
+    margin-top: 5vh;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.email, .numero {
+    font-size: 1rem;
+}
+
+#menuimg {
+    height: 3vh;
+}
+
+#closeMenu {
+    height: 3vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4228d6;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.fwb {
+    text-align: center;
+    position: relative;
+    top: 22vh;
+}
+
+.fwb p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    letter-spacing: .3rem;
+}
+
+.sm {
+    position: relative;
+    top: 23.4vh;
+    margin: auto;
+    font-size: 2.4rem;
+    font-weight: 800;
+    width: 60vw;
+    letter-spacing: -0.050em;
+}
+
+.desc {
+    position: relative;
+    top: 26vh;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.desc p {
+    font-size: 1.25rem;
+    opacity: 0.6;
+}
+
+.imagem {
+    height: 65vh;
+    width: 75vw;
+    position: relative;
+    top: 40vh;
+    background: url(../Assets/ftGaiola.jpg);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.technologies {
+    position: relative;
+    top: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.tecs {
+    justify-content: center;
+    position: inherit;
+    top: 2vh;
+    left: -4.5vw;
+    font-size: 1.25rem;
+    display: flex;
+    width: 1vw;
+}
+
+.tools {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    letter-spacing: .3rem;
+}
+
+.barra {
+    opacity: 0.6;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
