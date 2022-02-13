@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Rafael Tieppo</title>
+    <title>Portfolio | Rafael Tieppo - Freelance Full Stack & UI Designer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../Assets/logo3.png">
 </head>
 <body>
     <header>
         <div class="logo">
-           <img src="../Assets/logo.png">
+            <div class="img">
+                <img src="../Assets/logo1.png">
+            </div>
+            <div class="by">
+                <p class="nome">Rafael Tieppo</p>
+                <p class="mywork">FULL STACK & UI DESIGNER</p>
+            </div>
+            
         </div>
-        <div class="by">
-            <p class="nome">Rafael Tieppo</p>
-            <p class="mywork">FULL STACK DEVELOPER</p>
-        </div>
-        <div class="menu">
+        <div class="menu" >
             <p>MENU</p>
-            <img src="../Assets/menu.png" alt="" id="menuimg">
+            <img src="../Assets/menu.png" alt="" id="menuimg" onclick="showMenu()">
+        </div>        
+
+        <div class="modal" hidden>
+            <div class="logomenu">
+                <img src="../Assets/logo3.png">
+             </div>
+             <div class="bymenu">
+                 <p class="nomemenu">Rafael Tieppo</p>
+                 <p class="myworkmenu">FULL STACK & UI DESIGNER</p>
+             </div>
+             <div class="menuopen" >
+                 <p class="close"><a style="color: #878a8f;">CLOSE</a></p>
+                 <img src="../Assets/x.png" alt="" id="closeMenu" onclick="closeMenu()">
+             </div>
+
+             <div class="tit">MENU</div>
+             <div class="options">
+                 <div class="op">
+                     <p><a style="color: #FFF">Projects</a></p>
+                     <p>About me </p>
+                     <p>Contact</p>
+                     <p>Git Hub</p>
+                     <p>Instagram</p>
+                 </div>
+             </div>
+             <div class="fot">
+                 <p>&copy 2022 Rafael Tieppo. Made in São Paulo, Brazil.</p>
+             </div>
         </div>
     </header>
     <container>
         <div class="me">
             <p>Hi, i'm <a style="color: #4228d6">Rafael Tieppo!</a></p>
-            <p>Full Stack Developer.</p>
+            <p>Full Stack Dev. &</p>
+            <p>UI Designer</p>
             <div class="aboutme">
                 <p>I'm a systems development student at SENAI, 
                    I'm 17 years old, and I'm in the 3rd year of high school. I'm currently studying Node.js, Java, web development (HTML, CSS, JS), and good code practices like Github.</p>
@@ -34,6 +66,71 @@
         </div>
     </container>
     <main>
+
+        <section class="project">
+            <div class="slp">
+                <p>My Projects</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="date">
+                        <p>2021</p>
+                    </div>
+                    <div class="proj">
+                        <p>Rei das Viagens</p>
+                    </div>
+                    <div class="sobre">
+                        <p>Travel Website using web development and Java</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="../Assets/tiepposcar.png" alt="">
+                    </div>
+                    <div class="read">
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="date">
+                        <p>2022</p>
+                    </div>
+                    <div class="proj">
+                        <p>Tieppo's Car</p>
+                    </div>
+                    <div class="sobre">
+                        <p>website of an auto center (mechanical, electrical and car wash).</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="../Assets/tiepposcar.png" alt="">
+                    </div>
+                    <div class="read">
+                        <button>Read More</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="date">
+                        <p>2021</p>
+                    </div>
+                    <div class="proj">
+                        <p>Delivery</p>
+                    </div>
+                    <div class="sobre">
+                        <p>System of orders using JavaScript for delivery completed and ready for delivery.</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="../Assets/delvery.png" alt="">
+                    </div>
+                    <div class="read">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="git">
+                <img src="../Assets/gitbranco.png" alt="">
+                <p>Learn more here!</p>
+            </div>
+        </section>
+        
         <div class="lwt">
             <div class="need">
                 <p>NEED A DEVELOPER?</p>
@@ -50,8 +147,15 @@
         <div class="content">
             <div class="contact">
                 <p>Contact information —</p>
-                <div class="texto">
-                    <p></p>
+                <div class="textocontact">
+                    <p>Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.</p>
+                </div>
+
+                <p><a class="e">E:</a><a class="email">rafaelbartieppo@gmail.com</a></p>
+                <p><a class="p">P:</a><a class="numero">+55 (19) 99716-1599</a></p>
+
+                <div class="copy">
+                    <p>&copy 2022 Rafael Tieppo. Made in São Paulo, Brazil.</p>
                 </div>
             </div>
             <div class="current">
@@ -62,18 +166,18 @@
             </div>
             <div class="flw">
                 <p>Follow me on —</p>
-                <div class="texto">
-                    <p></p>
+                <div class="texto2">
+                    <p>Instagram</p>
+                    <p>LinkedIn</p>
                 </div>
             </div>
         </div>
     </footer>
-    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5519997161599" target="_blank">
-        <i class="fa fa-whatsapp"></i>
-    </a>
-    <a class="gmail-link" href="" target="_blank">
-        <i class="fa fa-gmail"></i>
-    </a>
+    <div class="gmail">
+        <a class="gmail-link" href="https://web.whatsapp.com/send?phone=5519997161599" target="_blank">
+            <img src="../Assets/gmail.png">
+        </a>
+    </div>
 </body>
-<script src="https://kit.fontawesome.com/73eb1e79ed.js" crossorigin="anonymous"></script>
+<script src="../home/index.js"></script>
 </html>
