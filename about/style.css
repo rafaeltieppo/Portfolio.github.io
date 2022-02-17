@@ -6,11 +6,11 @@
 }
 
 .modal {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background: #0f141e;
     z-index: 999;
 }
